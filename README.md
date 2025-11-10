@@ -62,13 +62,13 @@ The **PCID (PERSONAL SOFTWARE ONE-DIMENSIONAL SOFTWARE)** simulation tool is use
 
 ## Chapter 2: Literature Review
 
-This chapter summarizes research on the design and optimization of silicon/aluminium gallium arsenide (Si/AlGaAs) heterojunction solar cells[cite: 75, 77]. Key inferences from the literature include:
+This chapter summarizes research on the design and optimization of silicon/aluminium gallium arsenide (Si/AlGaAs) heterojunction solar cells. Key inferences from the literature include:
 
-* Exploration of design principles and optimization strategies to achieve enhanced efficiency and photon-electron harvesting in Si/AlGaAs heterojunction solar cells[cite: 77].
-*Investigation into the impact of doping profile optimization on performance, emphasizing strategies to improve carrier mobility and reduce recombination losses[cite: 80].
-* Analysis of AlGaAs as an effective interlayer in silicon/GaAs heterojunction cells, showing enhanced performance[cite: 83].
-* Review of innovations in Si-AlGaAs designs, summarizing key advancements[cite: 86].
-*Study of the influence of AlGaAs thickness on performance, focusing on proper adjustments for improved efficiency[cite: 89].
+* Exploration of design principles and optimization strategies to achieve enhanced efficiency and photon-electron harvesting in Si/AlGaAs heterojunction solar cells.
+*Investigation into the impact of doping profile optimization on performance, emphasizing strategies to improve carrier mobility and reduce recombination losses.
+* Analysis of AlGaAs as an effective interlayer in silicon/GaAs heterojunction cells, showing enhanced performance.
+* Review of innovations in Si-AlGaAs designs, summarizing key advancements.
+*Study of the influence of AlGaAs thickness on performance, focusing on proper adjustments for improved efficiency.
 
 ---
 
@@ -76,11 +76,11 @@ This chapter summarizes research on the design and optimization of silicon/alumi
 
 ### Problem Statement
 
-]The central technical challenge is the **optimization of thickness and doping levels** in the layers of the Si-AlGaAs heterojunction solar cell[cite: 94].This is critical for maximizing photon absorption within specific energy ranges and minimizing losses due to recombination[cite: 94].The focus is on the design of the **p-type Absorber layer (Si region)** and the **n-type emitter layer (AlGaAs region)**[cite: 95].
+]The central technical challenge is the **optimization of thickness and doping levels** in the layers of the Si-AlGaAs heterojunction solar cell].This is critical for maximizing photon absorption within specific energy ranges and minimizing losses due to recombination.The focus is on the design of the **p-type Absorber layer (Si region)** and the **n-type emitter layer (AlGaAs region)**.
 
 ### Background
 
-[cite_start]Traditional solar cell technologies face challenges in achieving optimal energy conversion efficiency[cite: 98]. [cite_start]The Si-AlGaAs heterojunction solar cell offers a promising solution[cite: 99]. [cite_start]The challenge lies in precisely tailoring the thickness and doping levels of critical layers to harness maximum photon absorption and minimize recombination losses[cite: 100].
+Traditional solar cell technologies face challenges in achieving optimal energy conversion efficiency. The Si-AlGaAs heterojunction solar cell offers a promising solution.The challenge lies in precisely tailoring the thickness and doping levels of critical layers to harness maximum photon absorption and minimize recombination losses.
 
 ---
 
@@ -89,39 +89,39 @@ This chapter summarizes research on the design and optimization of silicon/alumi
 ### Device Structure
 
 The c-Si/AlGaAs solar cell is a two-region device:
-* **Region 1 (AlGaAs):** The uppermost cell, engineered to absorb the **blue portion** of the solar spectrum (higher energy photons)[cite: 108, 109].
-* **Region 2 (c-Si):** The bottom cell, optimized for absorbing the **longer wavelength (red) portion** of the solar spectrum (lower energy photons)[cite: 108, 110].
+* **Region 1 (AlGaAs):** The uppermost cell, engineered to absorb the **blue portion** of the solar spectrum (higher energy photons)[.
+* **Region 2 (c-Si):** The bottom cell, optimized for absorbing the **longer wavelength (red) portion** of the solar spectrum (lower energy photons).
 
-The heterojunction design exploits the **complementary absorption characteristics** of the two materials, ensuring broad coverage of the solar spectrum and enhancing efficiency[cite: 120].An **intrinsic amorphous layer** bridges the AlGaAs and silicon layers, facilitating electron tunneling and ensuring current matching[cite: 117].
+The heterojunction design exploits the **complementary absorption characteristics** of the two materials, ensuring broad coverage of the solar spectrum and enhancing efficiency.An **intrinsic amorphous layer** bridges the AlGaAs and silicon layers, facilitating electron tunneling and ensuring current matching.
 
 ### Design Specifications
 
-The optimization process is iterative and requires careful analysis of simulation results[cite: 160].
+The optimization process is iterative and requires careful analysis of simulation results.
 
 | Device Specification | Value |
 | :--- | :--- |
-| Device Area | $1~cm^{2}$ [cite: 168] |
-| Front & Rear surface texture depth |$3~\mu m$ [cite: 168] |
-| Exterior Front Reflectance | 2% [cite: 168] |
+| Device Area | 1cm|
+| Front & Rear surface texture depth |$3~\mu m$  |
+| Exterior Front Reflectance | 2%  |
 
 | Region 1 (AlGaAs) Parameters | Specification |
 | :--- | :--- |
-| Thickness | $0.05~\mu m$ [cite: 170] |
-| Bandgap | $1.817~eV$ [cite: 170] |
-| Temperature | ]$25^{\circ}C$ [cite: 170] |
-| Dielectric Constant | $12.24$ [cite: 170] |
+| Thickness | 0.05 |
+| Bandgap | 1.817eV  |
+| Temperature |25 |
+| Dielectric Constant | 12.24 |
 
 | Region 2 (Si) Parameters | Specification |
 | :--- | :--- |
-| Thickness |$10~\mu m$ 
-| Bandgap |$1.124~eV$
+| Thickness |10 
+| Bandgap |1.124~eV
 | Temperature |$25^{\circ}C$ 
-| Dielectric Constant |
+| Dielectric Constant |12.24
 
 | Excitation Parameters | Specification |
 | :--- | :--- |
 | Excitation file | One-sun.exc  |
-| Light Intensity ($P_{in}$) | ]$0.1~W~cm^{-2}$] |
+| Light Intensity |  0.1 |
 | Spectrum | am15g.spc  |
 
 ---
@@ -132,15 +132,6 @@ The optimization process is iterative and requires careful analysis of simulatio
 
 The goal of the optimization was to find the set of parameters (thickness, doping levels, bandgap energies) that leads to the highest efficiency ($\eta$)The efficiency is calculated by incorporating the fill factor ($FF$), open-circuit voltage ($V_{oc}$), and short-circuit current ($I_{sc}$):
 $$\eta = \frac{V_{oc} \times I_{sc} \times FF}{P_{in}} \text{ ]}$$
-
-| Optimal Cell (CELL9) | Parameter | Value |
-| :--- | :--- | :--- |
-| **Efficiency** | $\eta$ | ]**19.9%**  |
-| AlGaAs Thickness |$0.05~\mu m$ ] |
-| AlGaAs Doping |]$1\times10^{18}~cm^{-3}$ (n)  |
-| Si Doping | $1\times10^{18}~cm^{-3}$ (p) |
-| Fill Factor (Approx.) | $FF$ | [81%  188] |
-
 ### Quantum Efficiency (QE) Analysis
 
 **Quantum Efficiency (QE)** measures the efficiency of a solar cell in converting incident photons into electrical current.
